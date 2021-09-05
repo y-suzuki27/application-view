@@ -1,5 +1,5 @@
 FROM php:7.4.1-fpm
-COPY php.ini /usr/local/etc/php/
+COPY ./docker/php/php.ini /usr/local/etc/php/php.ini
 
 RUN apt-get update \
   && apt-get install -y zlib1g-dev libzip-dev zip mariadb-client-10.3 libpng-dev libjpeg-dev curl wget \
